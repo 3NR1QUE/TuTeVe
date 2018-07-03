@@ -499,7 +499,7 @@
 ---------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------
 <channel>
-    <name>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR] Luis Miguel (La Serie) - [/COLOR][COLOR gold]Temporada 8[/COLOR]</name>
+    <name>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR] Luis Miguel (La Serie) - [/COLOR][COLOR gold]Temporada 1[/COLOR]</name>
     <thumbnail>https://upload.wikimedia.org/wikipedia/en/e/e9/Luis_Miguel_p%C3%B3ster.jpg</thumbnail>
     <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
     <link>https://ia601500.us.archive.org/11/items/Viaje_201707/Viaje.mp4</link>
@@ -691,6 +691,17 @@
 <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
 <link>http://ignoreme</link>
    <externallink>https://pastebin.com/raw/KHb4cGcM</externallink>
+</channel>
+  </channels>
+  
+<channels>
+ 
+<channel>
+      <name>[COLOR cyan][COLOR  lime]•   [/COLOR] Dragon Ball Heroes[/COLOR]</name>
+  <thumbnail>https://m.media-amazon.com/images/M/MV5BOGM0YmJlNGItOTVlNi00NjViLWFiMDAtNzE3MDk0YThjOTVhXkEyXkFqcGdeQXVyNzQzNzQxNzI@._V1_UY268_CR8,0,182,268_AL_.jpg</thumbnail>
+<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+<link>http://ignoreme</link>
+   <externallink>https://raw.githubusercontent.com/3NR1QUE/TuTeVe/master/DBH18.xml</externallink>
 </channel>
   </channels>
 
