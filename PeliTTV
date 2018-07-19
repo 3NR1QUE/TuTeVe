@@ -117,7 +117,7 @@
 
                         <item><title>[COLOR blue]• [/COLOR] [COLOR white]SANSON[/COLOR]</title>   
                         <thumbnail>http://es.web.img3.acsta.net/r_1920_1080/pictures/18/04/03/11/10/4261298.jpg</thumbnail>
-                        <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart><link>http://videmoon.com/movies/2018/Sans%c3%b3n%20(Samson)%20%20(2018).MP4</link></item>
+                        <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart><link>https://ia802807.us.archive.org/28/items/s4msSRREGIO/s4msSRREGIO.mkv</link></item>
 
                         <item><title>[COLOR blue]• [/COLOR] [COLOR white]Noche De Juegos[/COLOR]</title>   
                         <thumbnail>https://1.bp.blogspot.com/-o1PT8LJlQ0w/WnNUydmqK7I/AAAAAAAAoSM/GIIm3CnBOloycXjVYiyxh9Pn_wVClsjKQCLcBGAs/s640/Noche_de-Juegos_Poster_Latino_JPosters.jpg</thumbnail>
@@ -410,113 +410,15 @@
                        <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
                        <link>http://bit.ly/MRAQCIT</link></item>
 
-<item>
-<title>[COLOR blue]• [/COLOR] [COLOR white]Scarface[/COLOR]</title>
-<link>$doregex[url]|user-agent=Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.11$$lsname=[COLOR deepskyblue]101 Dalmatas</link>
-<thumbnail>https://i.pinimg.com/736x/30/b4/5c/30b45c49d9da92c1ba0b9024a76861d3--al-pacino-movieposter.jpg</thumbnail>
-<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-<regex>
-<name>url</name>
-<expres>Url":"(.*?)"</expres>
-<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[id]</page>
-<referer>http://diskokosmiko.mx/</referer>
-<rawpost>fileId=$doregex[id]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
-<cookiejar></cookiejar>
-</regex>
-<regex>
-<name>id</name>
-<expres>fileId=(.*?)"</expres>
-<page>http://diskokosmiko.mx/martin10/scafacec-45411/scarface-www-peliculasputlocker-net,553347.avi</page>
-<referer>http://diskokosmiko.mx/</referer>
-</regex>
-<regex>
-<name>tok</name>
-<expres>Token.*?value="(.*?)"</expres>
-<page>http://diskokosmiko.mx/martin10/scafacec-45411/scarface-www-peliculasputlocker-net,553347.avi</page>
-<referer>http://diskokosmiko.mx/</referer>
-</regex>
-</item>
+                        <item><title>[COLOR blue]• [/COLOR] [COLOR white]Scarface[/COLOR]</title>  
+                        <thumbnail>https://i.pinimg.com/736x/30/b4/5c/30b45c49d9da92c1ba0b9024a76861d3--al-pacino-movieposter.jpg</thumbnail>
+                       <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+                       <link>http://movies1.ottmex.com/disk1/comedia/scarface.caracortada.1983.lat.hd.flv.MP4</link></item>
 
-<item>
-<title>[COLOR blue]• [/COLOR] [COLOR white]The Warriors[/COLOR]</title>
-<link>$doregex[url]|user-agent=Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.11$$lsname=[COLOR deepskyblue]101 Dalmatas</link>
-<thumbnail>http://resizing.flixster.com/B4I9xErdm2PIZ6rrvDehMi1yByg=/799x1142/v1.bTsxMTE3MTMzNDtqOzE3NjI4OzIwNDg7ODQwOzEyMDA</thumbnail>
-<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-<regex>
-<name>url</name>
-<expres>Url":"(.*?)"</expres>
-<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[id]</page>
-<referer>http://diskokosmiko.mx/</referer>
-<rawpost>fileId=$doregex[id]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
-<cookiejar></cookiejar>
-</regex>
-<regex>
-<name>id</name>
-<expres>fileId=(.*?)"</expres>
-<page>http://diskokosmiko.mx/Luikwer/accion-films-52010/los-guerreros-los-amos-de-la-noche-dual-lat,769149.mkv</page>
-<referer>http://diskokosmiko.mx/</referer>
-</regex>
-<regex>
-<name>tok</name>
-<expres>Token.*?value="(.*?)"</expres>
-<page>http://diskokosmiko.mx/Luikwer/accion-films-52010/los-guerreros-los-amos-de-la-noche-dual-lat,769149.mkv</page>
-<referer>http://diskokosmiko.mx/</referer>
-</regex>
-</item>
-
-<item>
-<title>[COLOR blue]• [/COLOR] [COLOR white]De Mendigo A Millonario[/COLOR]</title>
-<link>$doregex[url]|user-agent=Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.11$$lsname=[COLOR deepskyblue]101 Dalmatas</link>
-<thumbnail>https://dvdlatinofull.files.wordpress.com/2010/09/de-mendigo-a-millonario.jpg</thumbnail>
-<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-<regex>
-<name>url</name>
-<expres>Url":"(.*?)"</expres>
-<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[id]</page>
-<referer>http://diskokosmiko.mx/</referer>
-<rawpost>fileId=$doregex[id]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
-<cookiejar></cookiejar>
-</regex>
-<regex>
-<name>id</name>
-<expres>fileId=(.*?)"</expres>
-<page>http://diskokosmiko.mx/Godzuky/peliculas-39955/de-mendigo-a-millonario-1983-720p,474763.mkv</page>
-<referer>http://diskokosmiko.mx/</referer>
-</regex>
-<regex>
-<name>tok</name>
-<expres>Token.*?value="(.*?)"</expres>
-<page>http://diskokosmiko.mx/Godzuky/peliculas-39955/de-mendigo-a-millonario-1983-720p,474763.mkv</page>
-<referer>http://diskokosmiko.mx/</referer>
-</regex>
-</item>
-
-<item>
-<title>[COLOR blue]• [/COLOR] [COLOR white]Guerrero Pacifico[/COLOR]</title>
-<link>$doregex[url]|user-agent=Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.11$$lsname=[COLOR deepskyblue]101 Dalmatas</link>
-<thumbnail>http://es.web.img2.acsta.net/pictures/210/080/21008076_20130524115907875.jpg</thumbnail>
-<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-<regex>
-<name>url</name>
-<expres>Url":"(.*?)"</expres>
-<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=$doregex[id]</page>
-<referer>http://diskokosmiko.mx/</referer>
-<rawpost>fileId=$doregex[id]&amp;__RequestVerificationToken=$doregex[tok]</rawpost>
-<cookiejar></cookiejar>
-</regex>
-<regex>
-<name>id</name>
-<expres>fileId=(.*?)"</expres>
-<page>http://diskokosmiko.mx/YSAGB/peliculas-e-1-91376/el-guerrero-pacifico-espanol,1579100.mp4</page>
-<referer>http://diskokosmiko.mx/</referer>
-</regex>
-<regex>
-<name>tok</name>
-<expres>Token.*?value="(.*?)"</expres>
-<page>http://diskokosmiko.mx/YSAGB/peliculas-e-1-91376/el-guerrero-pacifico-espanol,1579100.mp4</page>
-<referer>http://diskokosmiko.mx/</referer>
-</regex>
-</item>
+                        <item><title>[COLOR blue]• [/COLOR] [COLOR white]The Warriors[/COLOR]</title>  
+                        <thumbnail>http://resizing.flixster.com/B4I9xErdm2PIZ6rrvDehMi1yByg=/799x1142/v1.bTsxMTE3MTMzNDtqOzE3NjI4OzIwNDg7ODQwOzEyMDA</thumbnail>
+                       <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+                       <link>http://movies1.ottmex.com/disk1/crime/TheWarriors.mp4</link></item>
 
                         <item><title>[COLOR blue]• [/COLOR] [COLOR white]Geo-Tormenta[/COLOR]</title>   
                         <thumbnail>https://2.bp.blogspot.com/-XuG8zHNC1yQ/WZ2zXTRLxMI/AAAAAAAAm4E/NW0RTCe3DKIteZ1cRJA9PCtJrQx16c5YQCLcBGAs/s00/Geo-Tormenta_Poster_Latino_JPosters.jpg</thumbnail>
