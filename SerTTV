@@ -687,11 +687,19 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 
 <channel>
-    <name>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR] Super Campeones[/COLOR] [COLOR gold][2018][/COLOR]</name>
+    <name>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR] Super Campeones[/COLOR] [COLOR gold][2018 - Sub][/COLOR]</name>
     <thumbnail>https://www.animeyt.tv/files/img/series/s_3431_poster.jpeg</thumbnail>
     <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
     <link>http://ignoreme</link>
     <externallink>https://raw.githubusercontent.com/3NR1QUE/TuTeVe/master/SC18.xml</externallink>
+</channel>
+
+<channel>
+    <name>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR] Super Campeones[/COLOR] [COLOR gold][2018 - Latino][/COLOR]</name>
+    <thumbnail>https://www.animeyt.tv/files/img/series/s_3431_poster.jpeg</thumbnail>
+    <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+    <link>http://ignoreme</link>
+    <externallink>https://raw.githubusercontent.com/3NR1QUE/TuTeVe/master/SCLat18.xml</externallink>
 </channel>
 ---------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------
