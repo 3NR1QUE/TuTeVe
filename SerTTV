@@ -20,6 +20,7 @@
    <externallink>NA</externallink>
 </channel>
   </channels>
+  <items>
 ---------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -34,81 +35,14 @@
 </channel>
   </channels>
 -------------------------------------------------------------------------------------------------------------------------------------
-<channe>
-    <name>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR] +MAS Series En Latino[/COLOR]</name>
-    <thumbnail>https://k61.kn3.net/4/9/E/4/A/1/FBD.jpg</thumbnail>
-    <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-    <link>https://ia601500.us.archive.org/11/items/Viaje_201707/Viaje.mp4</link>
-        <items>
 
-<ite>
-<title>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR] +Pack Series En Latino[/COLOR] [COLOR green][Clic Aqui!][/COLOR]</title>
-<link>$doregex[makelist2]</link>
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-<title>[COLOR blue]• [/COLOR][COLOR white][makelist2.param2][/COLOR]</title>
-<thumbnail>https://k61.kn3.net/4/9/E/4/A/1/FBD.jpg</thumbnail>
-<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-<link>$doregex[makelist]</link>
-]]></listrepeat>
-<expres>href="(.*?)/">(.*?)/<</expres>
-<page>http://condor1726.dedicatedpanel.com/series%20latinas%202/</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[COLOR blue]• [/COLOR][COLOR white][makelist.param2][/COLOR]</title>
-<link>http://condor1726.dedicatedpanel.com/series%20latinas%202/[makelist2.param1]/[makelist.param1]</link>
-]]></listrepeat>
-<expres>href="(.*?)">(.*?)<</expres>
-<page>http://condor1726.dedicatedpanel.com/series%20latinas%202/[makelist2.param1]/</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://k61.kn3.net/4/9/E/4/A/1/FBD.jpg</thumbnail>
-<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-</ite>
-
-<ite>
-<title>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR] +MAS Series[/COLOR] [COLOR green][[Pack 2] Clic Aqui!][/COLOR]</title>
-<link>$doregex[makelist2]</link>
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-<title>[COLOR blue]• [/COLOR][COLOR white][makelist2.param2][/COLOR]</title>
-<thumbnail>https://k61.kn3.net/4/9/E/4/A/1/FBD.jpg</thumbnail>
-<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-<link>$doregex[makelist]</link>
-]]></listrepeat>
-<expres>href="(.*?)/">(.*?)/<</expres>
-<page>http://condor1726.dedicatedpanel.com/series</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[COLOR blue]• [/COLOR][COLOR white][makelist.param2][/COLOR]</title>
-<link>http://condor1726.dedicatedpanel.com/series/[makelist2.param1]/[makelist.param1]</link>
-]]></listrepeat>
-<expres>href="(.*?)">(.*?)<</expres>
-<page>http://condor1726.dedicatedpanel.com/series/[makelist2.param1]/</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://k61.kn3.net/4/9/E/4/A/1/FBD.jpg</thumbnail>
-<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-</ite>
 ----------------------------------------------------------------------------------------------------------------------
 <channel>
     <name>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR] Series Retro[/COLOR]</name>
     <thumbnail>https://k60.kn3.net/0/3/9/9/9/0/3CD.jpg</thumbnail>
     <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
     <link>https://ia601500.us.archive.org/11/items/Viaje_201707/Viaje.mp4</link>
-        <items>
+        
 <ite>
 <title>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR] +Series Retros [/COLOR] [COLOR gold][Clic Aqui!][/COLOR]</title>
 <link>$doregex[makelist2]</link>
