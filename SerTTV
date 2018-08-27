@@ -20,13 +20,12 @@
    <externallink>NA</externallink>
 </channel>
   </channels>
-  <items>
 ---------------------------------------------------------------------------------------------------------------------------------
 
 
 <channels>
  
-<channe>
+<channel>
       <name>[COLOR cyan][COLOR  lime]•   [/COLOR] +Series[/COLOR] [COLOR  gold][Clic Aqui!][/COLOR]</name>
   <thumbnail>https://k61.kn3.net/4/9/E/4/A/1/FBD.jpg</thumbnail>
 <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
@@ -36,244 +35,11 @@
   </channels>
 -------------------------------------------------------------------------------------------------------------------------------------
 
-----------------------------------------------------------------------------------------------------------------------
-<channel>
-    <name>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR] Series Retro[/COLOR]</name>
-    <thumbnail>https://k60.kn3.net/0/3/9/9/9/0/3CD.jpg</thumbnail>
-    <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-    <link>https://ia601500.us.archive.org/11/items/Viaje_201707/Viaje.mp4</link>
-        
-<ite>
-<title>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR] +Series Retros [/COLOR] [COLOR gold][Clic Aqui!][/COLOR]</title>
-<link>$doregex[makelist2]</link>
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-<title>[COLOR blue]• [/COLOR][COLOR white][makelist2.param2][/COLOR]</title>
-<thumbnail>https://k60.kn3.net/0/3/9/9/9/0/3CD.jpg</thumbnail>
-<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-<link>$doregex[makelist]</link>
-]]></listrepeat>
-<expres>href="(.*?)/">(.*?)/<</expres>
-<page>http://condor1726.dedicatedpanel.com/series%20old/</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[COLOR blue]• [/COLOR][COLOR white][makelist.param2][/COLOR]</title>
-<link>http://condor1726.dedicatedpanel.com/series%20old/[makelist2.param1]/[makelist.param1]</link>
-]]></listrepeat>
-<expres>href="(.*?)">(.*?)<</expres>
-<page>http://condor1726.dedicatedpanel.com/series%20old/[makelist2.param1]/</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://k60.kn3.net/0/3/9/9/9/0/3CD.jpg</thumbnail>
-<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-</ite>
-
-<item>
-<title>[COLOR cyan][COLOR  lime]•  [/COLOR][/COLOR][COLOR white] La Familia Monster[/COLOR] [COLOR green][/COLOR]</title>
-<link>$doregex[makelist]</link>
-<regex>
-            <name>makelist</name>
-            <listrepeat><![CDATA[
-                        <title>[COLOR cyan][COLOR  lime]• [/COLOR][COLOR white][makelist.param2] [/COLOR][COLOR turquoise]- TuTeVe[/COLOR]</title>
-                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
-<thumbnail>https://i.pinimg.com/originals/1c/08/92/1c08929c91da8daa2f77c785cff76c19.jpg</thumbnail>
-<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-            ]]></listrepeat>
-            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
-            <page>https://www.youtube.com/playlist?list=PLQ_KMQrrb-5LCxekEbzzeKy1tCTrQHBof</page>
-             <cookieJar></cookieJar>
-            <info>La Familia Monster</info>
-      <thumbnail>https://i.pinimg.com/originals/1c/08/92/1c08929c91da8daa2f77c785cff76c19.jpg</thumbnail>
-      <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-</regex>
-</item>
-
-<item>
-<title>[COLOR cyan][COLOR  lime]•  [/COLOR][/COLOR][COLOR white] Camino Al Cielo[/COLOR] [COLOR green][Todos Los Capitulos][/COLOR]</title>
-<link>$doregex[makelist]</link>
-<regex>
-            <name>makelist</name>
-            <listrepeat><![CDATA[
-                        <title>[COLOR cyan][COLOR  lime]• [/COLOR][COLOR white][makelist.param2] [/COLOR][COLOR turquoise]- TuTeVe[/COLOR]</title>
-                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
-<thumbnail>https://k60.kn3.net/E/F/5/2/9/5/8FB.jpg</thumbnail>
-<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-            ]]></listrepeat>
-            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
-            <page>https://www.youtube.com/playlist?list=PLYWzoQ-x2uemW78uWy9dMapE6mPi5feU2</page>
-             <cookieJar></cookieJar>
-            <info>Camino Al Cielo</info>
-      <thumbnail>https://k60.kn3.net/E/F/5/2/9/5/8FB.jpg</thumbnail>
-      <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-</regex>
-</item>
-
-<item>
-  <title>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR][COLOR  white]Mi Bella Genio[/COLOR] [COLOR green] [Todas Las Temporada][/COLOR]</title>
-<link>$doregex[makelist]</link>
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR cyan][COLOR  lime]•   [/COLOR][COLOR white][makelist.param3][/COLOR]</title>
-        <link>$doregex[getUrl]</link>
-        <thumbnail>https://s-media-cache-ak0.pinimg.com/originals/25/42/9d/25429de53f23706933f568e5109b571f.jpg</thumbnail>
-        <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://diskokosmiko.mx/FLAYSINA/serie-mi-bella-genio-t-1-2-3-4-5-serie-completa-34472/list,1,10</page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
-<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
-<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
- 
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>tok</name>
-<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://diskokosmiko.mx/[makelist.param2]</page>
-<referer>http://diskokosmiko.mx/FLAYSINA/serie-mi-bella-genio-t-1-2-3-4-5-serie-completa-34472/list,1,10</referer>
-<cookieJar>$doregex[cookie]</cookieJar>
-</regex>
-<regex>
-<name>cookie</name>
-<expres><expres>
-<page>http://diskokosmiko.mx/action/Account/Login</page>
-<referer>http://diskokosmiko.mx/</referer>
-<rawpost>__RequestVerificationToken=$doregex[logtok]&amp;UserName=Angeline69&amp;Password=angel1314</rawpost>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>logtok</name>
-<expres>Token.+?value="([^"]+)<expres>
-<page>http://diskokosmiko.mx/action/Account/Login</page>
-<referer>http://diskokosmiko.mx/<referer>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://s-media-cache-ak0.pinimg.com/originals/25/42/9d/25429de53f23706933f568e5109b571f.jpg</thumbnail>
-<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-  </item>
--------------------------------
-<item>
-<title>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR][COLOR  white]Sledge Hammer[/COLOR][COLOR green] [Temporada 1][/COLOR]</title>
-<link>$doregex[makelist]</link>
-<regex>
-            <name>makelist</name>
-            <listrepeat><![CDATA[
-                        <title>[COLOR cyan][COLOR  lime]• [/COLOR][COLOR white][makelist.param2] [/COLOR][COLOR turquoise]- TuTeVe[/COLOR]</title>
-                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
-<thumbnail>https://www.assignmentx.com/wp-content/uploads/2011/12/SLEDGE-HAMMER-THE-COMPLETE-SERIES.jpg</thumbnail>
-<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-            ]]></listrepeat>
-            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
-            <page>https://www.youtube.com/playlist?list=PLsvZiRFroyizcF8EUmCEBkl4eBsjhpunM</page>
-             <cookieJar></cookieJar>
-            <info>Sledge Hammer</info>
-      <thumbnail>https://www.assignmentx.com/wp-content/uploads/2011/12/SLEDGE-HAMMER-THE-COMPLETE-SERIES.jpg</thumbnail>
-      <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-</regex>
-</item>
-----------------------------------
-<item>
-<title>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR][COLOR  white]Sledge Hammer[/COLOR][COLOR green] [Temporada 2][/COLOR]</title>
-<link>$doregex[makelist]</link>
-<regex>
-            <name>makelist</name>
-            <listrepeat><![CDATA[
-                        <title>[COLOR cyan][COLOR  lime]• [/COLOR][COLOR white][makelist.param2] [/COLOR][COLOR turquoise]- TuTeVe[/COLOR]</title>
-                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
-<thumbnail>https://www.assignmentx.com/wp-content/uploads/2011/12/SLEDGE-HAMMER-THE-COMPLETE-SERIES.jpg</thumbnail>
-<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-            ]]></listrepeat>
-            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
-            <page>https://www.youtube.com/playlist?list=PLsvZiRFroyixqNex2VdAOf1NX5tphd-D9</page>
-             <cookieJar></cookieJar>
-            <info>Sledge Hammer</info>
-      <thumbnail>https://www.assignmentx.com/wp-content/uploads/2011/12/SLEDGE-HAMMER-THE-COMPLETE-SERIES.jpg</thumbnail>
-      <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-</regex>
-------------------------------------------------------
-<item>
-<title>[COLOR cyan][COLOR  lime]•  [/COLOR][/COLOR][COLOR white] El Toque De Un Angel[/COLOR] [COLOR green][Temporada 1][/COLOR]</title>
-<link>$doregex[makelist]</link>
-<regex>
-            <name>makelist</name>
-            <listrepeat><![CDATA[
-                        <title>[COLOR cyan][COLOR  lime]• [/COLOR][COLOR white][makelist.param2] [/COLOR][COLOR turquoise]- TuTeVe[/COLOR]</title>
-                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
-<thumbnail>https://allserieslinamarcela.files.wordpress.com/2008/11/1touchedbyangelmw1.jpg</thumbnail>
-<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-            ]]></listrepeat>
-            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
-            <page>https://www.youtube.com/playlist?list=PL3sYItkCPnPNaNKojH7MD38MlyzmONqFm</page>
-             <cookieJar></cookieJar>
-            <info>El Toque De Un Angel</info>
-      <thumbnail>https://allserieslinamarcela.files.wordpress.com/2008/11/1touchedbyangelmw1.jpg</thumbnail>
-      <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-</regex>
-</item>
-----------------------------------
-<item>
-<title>[COLOR cyan][COLOR  lime]•  [/COLOR][/COLOR][COLOR white] El Toque De Un Angel[/COLOR] [COLOR green][Temporada 2][/COLOR]</title>
-<link>$doregex[makelist]</link>
-<regex>
-            <name>makelist</name>
-            <listrepeat><![CDATA[
-                        <title>[COLOR cyan][COLOR  lime]• [/COLOR][COLOR white][makelist.param2] [/COLOR][COLOR turquoise]- TuTeVe[/COLOR]</title>
-                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
-<thumbnail>https://k60.kn3.net/4/4/9/A/A/9/5E9.jpg</thumbnail>
-<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-            ]]></listrepeat>
-            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
-            <page>https://www.youtube.com/playlist?list=PL3sYItkCPnPPWReGzz9kkLIMpOzHk5qtV</page>
-             <cookieJar></cookieJar>
-            <info>El Toque De Un Angel</info>
-      <thumbnail>https://k60.kn3.net/4/4/9/A/A/9/5E9.jpg</thumbnail>
-      <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-</regex>
-</item>
-----------------------------------
-<item>
-<title>[COLOR cyan][COLOR  lime]•  [/COLOR][/COLOR][COLOR white] El Toque De Un Angel[/COLOR] [COLOR green][Temporada 3][/COLOR]</title>
-<link>$doregex[makelist]</link>
-<regex>
-            <name>makelist</name>
-            <listrepeat><![CDATA[
-                        <title>[COLOR cyan][COLOR  lime]• [/COLOR][COLOR white][makelist.param2] [/COLOR][COLOR turquoise]- TuTeVe[/COLOR]</title>
-                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
-<thumbnail>https://assets.metrolatam.com/hub/2016/09/21/screen-shot-2016-09-21-at-2-18-34-pm.png</thumbnail>
-<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-            ]]></listrepeat>
-            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
-            <page>https://www.youtube.com/playlist?list=PL3sYItkCPnPNnN5BsWIs8UD8G5nJ9v5Ee</page>
-             <cookieJar></cookieJar>
-            <info>El Toque De Un Angel</info>
-      <thumbnail>https://assets.metrolatam.com/hub/2016/09/21/screen-shot-2016-09-21-at-2-18-34-pm.png</thumbnail>
-      <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-</regex>
-</item>
--------------------------------------------------------------------------------------------------------------------------------- 
-------------------------------------------| SERIES RETRO |------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------
-
 <channel>
     <name>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR] Altered Carbon[/COLOR]</name>
     <thumbnail>https://pbs.twimg.com/media/DTWbtBLWkAEcGbH.jpg:large</thumbnail>
     <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
     <link>https://ia601500.us.archive.org/11/items/Viaje_201707/Viaje.mp4</link>
-        <items>
  
                
                         <item><title>                     [COLOR=blue]<<[/COLOR][COLOR=white] Altered Carbon[/COLOR][COLOR gold] - Temporada Completa[/COLOR][COLOR white] - TuTeVe[/COLOR][COLOR=blue]>>[/COLOR]</title>  
@@ -3852,7 +3618,237 @@
 <thumbnail>https://s-media-cache-ak0.pinimg.com/originals/19/5c/df/195cdf19c5f12f5e3d325f1e8b1d9d37.jpg</thumbnail>
 <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
   </item>
-  </items>
 ---------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+<channel>
+    <name>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR] Series Retro[/COLOR]</name>
+    <thumbnail>https://k60.kn3.net/0/3/9/9/9/0/3CD.jpg</thumbnail>
+    <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+    <link>https://ia601500.us.archive.org/11/items/Viaje_201707/Viaje.mp4</link>
+        
+<ite>
+<title>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR] +Series Retros [/COLOR] [COLOR gold][Clic Aqui!][/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR blue]• [/COLOR][COLOR white][makelist2.param2][/COLOR]</title>
+<thumbnail>https://k60.kn3.net/0/3/9/9/9/0/3CD.jpg</thumbnail>
+<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+<link>$doregex[makelist]</link>
+]]></listrepeat>
+<expres>href="(.*?)/">(.*?)/<</expres>
+<page>http://condor1726.dedicatedpanel.com/series%20old/</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR blue]• [/COLOR][COLOR white][makelist.param2][/COLOR]</title>
+<link>http://condor1726.dedicatedpanel.com/series%20old/[makelist2.param1]/[makelist.param1]</link>
+]]></listrepeat>
+<expres>href="(.*?)">(.*?)<</expres>
+<page>http://condor1726.dedicatedpanel.com/series%20old/[makelist2.param1]/</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://k60.kn3.net/0/3/9/9/9/0/3CD.jpg</thumbnail>
+<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+</ite>
+
+<item>
+<title>[COLOR cyan][COLOR  lime]•  [/COLOR][/COLOR][COLOR white] La Familia Monster[/COLOR] [COLOR green][/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[COLOR cyan][COLOR  lime]• [/COLOR][COLOR white][makelist.param2] [/COLOR][COLOR turquoise]- TuTeVe[/COLOR]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
+<thumbnail>https://i.pinimg.com/originals/1c/08/92/1c08929c91da8daa2f77c785cff76c19.jpg</thumbnail>
+<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>https://www.youtube.com/playlist?list=PLQ_KMQrrb-5LCxekEbzzeKy1tCTrQHBof</page>
+             <cookieJar></cookieJar>
+            <info>La Familia Monster</info>
+      <thumbnail>https://i.pinimg.com/originals/1c/08/92/1c08929c91da8daa2f77c785cff76c19.jpg</thumbnail>
+      <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+</regex>
+</item>
+
+<item>
+<title>[COLOR cyan][COLOR  lime]•  [/COLOR][/COLOR][COLOR white] Camino Al Cielo[/COLOR] [COLOR green][Todos Los Capitulos][/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[COLOR cyan][COLOR  lime]• [/COLOR][COLOR white][makelist.param2] [/COLOR][COLOR turquoise]- TuTeVe[/COLOR]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
+<thumbnail>https://k60.kn3.net/E/F/5/2/9/5/8FB.jpg</thumbnail>
+<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>https://www.youtube.com/playlist?list=PLYWzoQ-x2uemW78uWy9dMapE6mPi5feU2</page>
+             <cookieJar></cookieJar>
+            <info>Camino Al Cielo</info>
+      <thumbnail>https://k60.kn3.net/E/F/5/2/9/5/8FB.jpg</thumbnail>
+      <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+</regex>
+</item>
+
+<item>
+  <title>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR][COLOR  white]Mi Bella Genio[/COLOR] [COLOR green] [Todas Las Temporada][/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR cyan][COLOR  lime]•   [/COLOR][COLOR white][makelist.param3][/COLOR]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://s-media-cache-ak0.pinimg.com/originals/25/42/9d/25429de53f23706933f568e5109b571f.jpg</thumbnail>
+        <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/FLAYSINA/serie-mi-bella-genio-t-1-2-3-4-5-serie-completa-34472/list,1,10</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+ 
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/FLAYSINA/serie-mi-bella-genio-t-1-2-3-4-5-serie-completa-34472/list,1,10</referer>
+<cookieJar>$doregex[cookie]</cookieJar>
+</regex>
+<regex>
+<name>cookie</name>
+<expres><expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/</referer>
+<rawpost>__RequestVerificationToken=$doregex[logtok]&amp;UserName=Angeline69&amp;Password=angel1314</rawpost>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>logtok</name>
+<expres>Token.+?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/Account/Login</page>
+<referer>http://diskokosmiko.mx/<referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://s-media-cache-ak0.pinimg.com/originals/25/42/9d/25429de53f23706933f568e5109b571f.jpg</thumbnail>
+<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+  </item>
+-------------------------------
+<item>
+<title>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR][COLOR  white]Sledge Hammer[/COLOR][COLOR green] [Temporada 1][/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[COLOR cyan][COLOR  lime]• [/COLOR][COLOR white][makelist.param2] [/COLOR][COLOR turquoise]- TuTeVe[/COLOR]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
+<thumbnail>https://www.assignmentx.com/wp-content/uploads/2011/12/SLEDGE-HAMMER-THE-COMPLETE-SERIES.jpg</thumbnail>
+<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>https://www.youtube.com/playlist?list=PLsvZiRFroyizcF8EUmCEBkl4eBsjhpunM</page>
+             <cookieJar></cookieJar>
+            <info>Sledge Hammer</info>
+      <thumbnail>https://www.assignmentx.com/wp-content/uploads/2011/12/SLEDGE-HAMMER-THE-COMPLETE-SERIES.jpg</thumbnail>
+      <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+</regex>
+</item>
+----------------------------------
+<item>
+<title>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR][COLOR  white]Sledge Hammer[/COLOR][COLOR green] [Temporada 2][/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[COLOR cyan][COLOR  lime]• [/COLOR][COLOR white][makelist.param2] [/COLOR][COLOR turquoise]- TuTeVe[/COLOR]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
+<thumbnail>https://www.assignmentx.com/wp-content/uploads/2011/12/SLEDGE-HAMMER-THE-COMPLETE-SERIES.jpg</thumbnail>
+<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>https://www.youtube.com/playlist?list=PLsvZiRFroyixqNex2VdAOf1NX5tphd-D9</page>
+             <cookieJar></cookieJar>
+            <info>Sledge Hammer</info>
+      <thumbnail>https://www.assignmentx.com/wp-content/uploads/2011/12/SLEDGE-HAMMER-THE-COMPLETE-SERIES.jpg</thumbnail>
+      <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+</regex>
+------------------------------------------------------
+<item>
+<title>[COLOR cyan][COLOR  lime]•  [/COLOR][/COLOR][COLOR white] El Toque De Un Angel[/COLOR] [COLOR green][Temporada 1][/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[COLOR cyan][COLOR  lime]• [/COLOR][COLOR white][makelist.param2] [/COLOR][COLOR turquoise]- TuTeVe[/COLOR]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
+<thumbnail>https://allserieslinamarcela.files.wordpress.com/2008/11/1touchedbyangelmw1.jpg</thumbnail>
+<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>https://www.youtube.com/playlist?list=PL3sYItkCPnPNaNKojH7MD38MlyzmONqFm</page>
+             <cookieJar></cookieJar>
+            <info>El Toque De Un Angel</info>
+      <thumbnail>https://allserieslinamarcela.files.wordpress.com/2008/11/1touchedbyangelmw1.jpg</thumbnail>
+      <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+</regex>
+</item>
+----------------------------------
+<item>
+<title>[COLOR cyan][COLOR  lime]•  [/COLOR][/COLOR][COLOR white] El Toque De Un Angel[/COLOR] [COLOR green][Temporada 2][/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[COLOR cyan][COLOR  lime]• [/COLOR][COLOR white][makelist.param2] [/COLOR][COLOR turquoise]- TuTeVe[/COLOR]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
+<thumbnail>https://k60.kn3.net/4/4/9/A/A/9/5E9.jpg</thumbnail>
+<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>https://www.youtube.com/playlist?list=PL3sYItkCPnPPWReGzz9kkLIMpOzHk5qtV</page>
+             <cookieJar></cookieJar>
+            <info>El Toque De Un Angel</info>
+      <thumbnail>https://k60.kn3.net/4/4/9/A/A/9/5E9.jpg</thumbnail>
+      <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+</regex>
+</item>
+----------------------------------
+<item>
+<title>[COLOR cyan][COLOR  lime]•  [/COLOR][/COLOR][COLOR white] El Toque De Un Angel[/COLOR] [COLOR green][Temporada 3][/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+            <name>makelist</name>
+            <listrepeat><![CDATA[
+                        <title>[COLOR cyan][COLOR  lime]• [/COLOR][COLOR white][makelist.param2] [/COLOR][COLOR turquoise]- TuTeVe[/COLOR]</title>
+                        <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
+<thumbnail>https://assets.metrolatam.com/hub/2016/09/21/screen-shot-2016-09-21-at-2-18-34-pm.png</thumbnail>
+<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+            ]]></listrepeat>
+            <expres>spf-link " dir="ltr" href="\/watch\?v=(.*?)&amp;.*?\n(.*)</expres>
+            <page>https://www.youtube.com/playlist?list=PL3sYItkCPnPNnN5BsWIs8UD8G5nJ9v5Ee</page>
+             <cookieJar></cookieJar>
+            <info>El Toque De Un Angel</info>
+      <thumbnail>https://assets.metrolatam.com/hub/2016/09/21/screen-shot-2016-09-21-at-2-18-34-pm.png</thumbnail>
+      <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+</regex>
+</item>
+-------------------------------------------------------------------------------------------------------------------------------- 
+------------------------------------------| SERIES RETRO |------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
