@@ -32,59 +32,9 @@
     <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart><link>https://ia601500.us.archive.org/11/items/Viaje_201707/Viaje.mp4</link></item>
                     
 ---------------------------------------------------------------------------------------------------------------------------------
-<item>
-  <title>[COLOR blue]• [/COLOR] [COLOR white]La Maldición De Las Hormigas Gigantes[/COLOR]</title>
-<link>$doregex[makelist]</link>
-<regex>
-  <name>makelist</name>
-  <listrepeat><![CDA[COLOR blue]• [/COLOR] [COLOR white]La Maldición De Las Hormigas Gigantes[/COLOR]TA[
-        <title> [makelist.param3]</title>
-        <link>$doregex[getUrl]</link>
-        <thumbnail>https://images.zetatv.com.uy/getimageurl/400x600/noop/zpapi.zetatv.com.uy/media/images/c59f8085-8dcd-43e6-9846-0b1f67eeac5f.jpg</thumbnail>
-        <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-]]></listrepeat>
-<expres>Url":"(.*?)"</expres>
-<page>http://diskokosmiko.mx/MRV/mrv-101615/2017it-came-from-the-desert-2017-dvdrip-lat,1890595.mp4</page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&f=[makelist.param1]</page>
-<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
-<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
- 
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>tok</name>
-<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://diskokosmiko.mx/[makelist.param2]</page>
-<referer>http://diskokosmiko.mx/</referer>
-<cookieJar>$doregex[cookie]</cookieJar>
-</regex>
-<regex>
-<name>cookie</name>
-<expres><expres>
-<page>http://diskokosmiko.mx/action/Account/Login</page>
-<referer>http://diskokosmiko.mx/</referer>
-<rawpost>__RequestVerificationToken=$doregex[logtok]&amp;UserName=Angeline69&amp;Password=angel1314</rawpost>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>tok</name>
-<expres>Token.*?value="(.*?)"</expres>
-<page>http://diskokosmiko.mx/action/Account/Login</page>
-<referer>http://diskokosmiko.mx/<referer>
-<cookieJar></cookieJar>
-</regex>
-</item>
-
                         <item><title>[COLOR blue]• [/COLOR] [COLOR white]Breaking Bad[/COLOR]</title>   
                         <thumbnail>https://i.pinimg.com/originals/10/12/44/10124425d4347ce0d116299327fe2a0f.jpg</thumbnail>
-                        <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart><link>http://videmoon.com/movies/2017/Breaking_Bad_(2017).MP4</link></item>
+                        <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart><link>https://movies1.ottmex.com/disk1/accion/Breaking.Bad.The.Movie.mkv</link></item>
 
                         <item><title>[COLOR blue]• [/COLOR] [COLOR white]Sicarios[/COLOR]</title>   
                         <thumbnail>https://auroreinparis.files.wordpress.com/2015/10/moa01_sicario_transitshelter-2.jpg?w=1400</thumbnail>
