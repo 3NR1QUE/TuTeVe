@@ -3382,7 +3382,7 @@
     <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart><link>https://ia601500.us.archive.org/11/items/Viaje_201707/Viaje.mp4</link></item>
 
  <item>
-<title>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR][COLOR  white]La Fea Mas Bella[/COLOR][COLOR  green] [Todos Los Capítulos][/COLOR]</title>
+<title>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR][COLOR  white]La Fea Mas Bella[/COLOR][COLOR  gold] [Todos Los Capítulos + Temporada 2 EcoModa][/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -3393,7 +3393,7 @@
         <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://diskokosmiko.mx/esaespe/la-fea-mas-bella-completisima-85517/list,1,13</page>
+<page>http://diskokosmiko.mx/BellaNapoli/yo-soy-betty-la-fea-hd-ecomoda-95003/list,1,8</page>
 <cookieJar></cookieJar>
 </regex>
 <regex>
@@ -3411,7 +3411,7 @@
 <name>tok</name>
 <expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
 <page>http://diskokosmiko.mx/[makelist.param2]</page>
-<referer>http://diskokosmiko.mx/esaespe/la-fea-mas-bella-completisima-85517/list,1,13</referer>
+<referer>http://diskokosmiko.mx/BellaNapoli/yo-soy-betty-la-fea-hd-ecomoda-95003/list,1,8</referer>
 <cookieJar>$doregex[cookie]</cookieJar>
 </regex>
 <regex>
@@ -3432,7 +3432,6 @@
 <thumbnail>https://upload.wikimedia.org/wikipedia/en/9/90/La_fea_m%C3%A1s_bella_poster.jpg</thumbnail>
 <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
   </item>
-
 ---------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------
 
