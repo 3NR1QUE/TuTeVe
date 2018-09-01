@@ -3316,7 +3316,7 @@
     <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart><link>https://ia601500.us.archive.org/11/items/Viaje_201707/Viaje.mp4</link></item>
 
  <item>
-<title>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR][COLOR  white]Yo Soy Betty La Fea[/COLOR][COLOR  green] [Todos Los Capítulos][/COLOR]</title>
+<title>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR][COLOR  white]Yo Soy Betty La Fea[/COLOR][COLOR gold] [Todos Los Capítulos + Temporada 2 EcoModa][/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
   <name>makelist</name>
@@ -3327,7 +3327,7 @@
         <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://diskokosmiko.mx/jorge-garcia-luis/yo-soy-betty-la-fea-91266/list,1,7</page>
+<page>http://diskokosmiko.mx/BellaNapoli/yo-soy-betty-la-fea-hd-ecomoda-95003/list,1,8</page>
 <cookieJar></cookieJar>
 </regex>
 <regex>
@@ -3345,7 +3345,7 @@
 <name>tok</name>
 <expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
 <page>http://diskokosmiko.mx/[makelist.param2]</page>
-<referer>http://diskokosmiko.mx/jorge-garcia-luis/yo-soy-betty-la-fea-91266/list,1,7</referer>
+<referer>http://diskokosmiko.mx/BellaNapoli/yo-soy-betty-la-fea-hd-ecomoda-95003/list,1,8</referer>
 <cookieJar>$doregex[cookie]</cookieJar>
 </regex>
 <regex>
@@ -3369,19 +3369,19 @@
 ---------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------
 
-<channel>
+<channe>
     <name>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR] La Fea Mas Bella[/COLOR]</name>
     <thumbnail>https://upload.wikimedia.org/wikipedia/en/9/90/La_fea_m%C3%A1s_bella_poster.jpg</thumbnail>
     <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
     <link>https://ia601500.us.archive.org/11/items/Viaje_201707/Viaje.mp4</link>
-        <items>
+        <item>
  
                
-                        <item><title>                     [COLOR=blue]<<[/COLOR][COLOR=white] La Fea Mas Bella[/COLOR][COLOR turquoise][/COLOR][COLOR white] - TuTeVe[/COLOR][COLOR=blue]>>[/COLOR]</title>  
+                        <ite><title>                     [COLOR=blue]<<[/COLOR][COLOR=white] La Fea Mas Bella[/COLOR][COLOR turquoise][/COLOR][COLOR white] - TuTeVe[/COLOR][COLOR=blue]>>[/COLOR]</title>  
     <thumbnail>http://i24web.com/wp-content/uploads/2017/10/384b7-la-fea-mas-bella.jpg</thumbnail>
-    <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart><link>https://ia601500.us.archive.org/11/items/Viaje_201707/Viaje.mp4</link></item>
+    <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart><link>https://ia601500.us.archive.org/11/items/Viaje_201707/Viaje.mp4</link></ite>
 
- <item>
+ <ite>
 <title>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR][COLOR  white]La Fea Mas Bella[/COLOR][COLOR  gold] [Todos Los Capítulos + Temporada 2 EcoModa][/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
@@ -3431,7 +3431,7 @@
 </regex>
 <thumbnail>https://upload.wikimedia.org/wikipedia/en/9/90/La_fea_m%C3%A1s_bella_poster.jpg</thumbnail>
 <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
-  </item>
+  </ite>
 ---------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------
 
