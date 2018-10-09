@@ -255,7 +255,7 @@
 ---------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------
 <channel>
-    <name>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR] The Walking Dead - [/COLOR][COLOR gold]Temporada 8[/COLOR]</name>
+    <name>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR] The Walking Dead - [/COLOR][COLOR gold]Temporada 9[/COLOR]</name>
     <thumbnail>https://pbs.twimg.com/media/DIHLktVUQAADSoP.jpg:large</thumbnail>
     <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
     <link>https://ia601500.us.archive.org/11/items/Viaje_201707/Viaje.mp4</link>
@@ -266,6 +266,11 @@
     <thumbnail>http://freakelitex.com/wp-content/uploads/2017/08/1500561308_865537_1500561463_noticia_normal.jpg</thumbnail>
     <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart><link>https://ia601500.us.archive.org/11/items/Viaje_201707/Viaje.mp4</link></item>
 
+		        <item><title>[COLOR white]The Walking Dead - [/COLOR][COLOR gold]Temporada 9[/COLOR]</title>  
+                        <thumbnail>https://pbs.twimg.com/media/DIHLktVUQAADSoP.jpg:large</thumbnail>
+                        <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart><externallink>https://raw.githubusercontent.com/3NR1QUE/TuTeVe/master/TWD09</externallink></item>
+	
+		
 <item>
   <title>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR][COLOR  white]The Walking Dead[/COLOR] [COLOR  blue]Temporada 8 - Parte 1 [En Latino][/COLOR]</title>
 <link>$doregex[makelist]</link>
