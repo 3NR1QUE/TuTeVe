@@ -16,13 +16,43 @@
 -------------------------
 
 -------------------------
-<item>
+<ite>
 		<title>[COLOR blue]• [/COLOR][COLOR gold] Lista De Canales PREMIUM IPTV - [/COLOR][COLOR turquoise]TuTeVe[/COLOR] [COLOR red](Seguridad: Temporales Se Actualiza Cada 24H)[/COLOR]        </title>
 <link>NA</link> 
 <externallink>https://pastebin.com/raw/C1zpgxvd</externallink>https://pastebin.com/raw/BqgQkqEh - https://pastebin.com/raw/Xq8LUKKy
  			<thumbnail>https://k61.kn3.net/7/7/9/4/A/5/E2E.jpg</thumbnail>
 <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart></item>
+-------
+<item>
+<title>[COLOR blue]• [/COLOR][COLOR gold] Lista De Canales PREMIUM IPTV - [/COLOR][COLOR turquoise]TuTeVe[/COLOR] [COLOR red](Seguridad: Temporales Se Actualiza Cada 24H)[/COLOR]        </title>
+<link>$doregex[makelist]</link>
 
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[url]|Referer=http://www.liketvw.com/embed/fox&amp;Origin=http://www.liketvw.com&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<thumbnail>[makelist.param2]</thumbnail>
+<regex>
+   <name>url</name>   
+   <expres>file: "(.*?)"</expres>
+   <page>http://www.liketvw.com/embed/$doregex[temp]</page>
+   <referer>http://www.liketvw.com</referer>
+   <cookieJar/>
+</regex>
+<regex> 
+   <name>temp</name>   
+   <expres>\"\>id=\"(.*?)\"</expres>  
+   <page>http://www.liketvw.com[makelist.param1]</page>
+   <cookieJar/>
+</regex>
+]]></listrepeat>
+<expres><![CDATA[href="(\/chan.*?)"[\w\W\w]{0,155}src="(.*?)"[\w\W\s]{0,45}h4>(.*?)<]]></expres>
+<page>http://www.liketvw.com</page>
+</regex>
+<thumbnail>https://k61.kn3.net/7/7/9/4/A/5/E2E.jpg</thumbnail>
+<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart></item>		
+----------------		
 <ite>
 		<title>[COLOR blue]• [/COLOR][COLOR gold] Lista Remota De Canales IPTV - [/COLOR][COLOR turquoise]TuTeVe[/COLOR] [COLOR red][/COLOR]        </title>
 <link>NA</link>2
