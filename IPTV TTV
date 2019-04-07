@@ -33,6 +33,7 @@
 <title>[makelist.param3]</title>
 <link>$doregex[url]|Referer=http://www.liketvw.com/embed/fox&amp;Origin=http://www.liketvw.com&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
 <thumbnail>[makelist.param2]</thumbnail>
+<fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
 <regex>
    <name>url</name>   
    <expres>file: "(.*?)"</expres>
