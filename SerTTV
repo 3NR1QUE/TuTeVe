@@ -34,7 +34,12 @@
 </channel>
   </channels>
 -------------------------------------------------------------------------------------------------------------------------------------
-
+<channel>
+    <name>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR] Juego De Tronos[/COLOR] [COLOR Gold]Temporadas  1-8[/COLOR]</name>
+    <thumbnail>hhttps://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/juego-de-tronos-temporada-8-poster-1553181412.jpg</thumbnail>
+    <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart>
+    <link>https://ia601500.us.archive.org/11/items/Viaje_201707/Viaje.mp4</link>
+        <items>
 <item>
 <title>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR] Juego De Tronos[/COLOR] [COLOR Gold]Temporadas  1-8[/COLOR]</title>
 <link>$doregex[makelist2]</link>
