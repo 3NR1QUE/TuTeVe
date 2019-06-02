@@ -3857,3 +3857,116 @@ def GetLSProData(page_data,Cookie_Jar,m):
 -------------------------------------------------------------------------------------------------------------------------------- 
 ------------------------------------------| SERIES RETRO |------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------
+
+	
+<item>
+<title>[COLOR lightyellow][B]INKA SERIES[/B] [/COLOR]</title>
+
+<link>$doregex[makelist1]</link>
+
+
+<regex>
+    <name>makelist1</name> movies  (all pages)
+ <listrepeat><![CDATA[
+<title>[makelist1.param2]   </title>
+<link>$doregex[makelist2]</link>
+<fanart>[makelist1.param3]</fanart>
+<thumbnail>[makelist1.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'https://www.inkaseries.tv/ultimas-series-agregadas/'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '' ### check the number of the param ###
+ centerurl = 'page/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'class="poster.*?href="(.*?)".*?title="(.*?)".*?\n.*?data-src="(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 4 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+]]></expres><page></page>
+</regex>
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+
+<title>[makelist2.param2]   </title>
+<link>$doregex[makelist3]</link>
+<fanart>[makelist1.param3]</fanart>
+<thumbnail>[makelist1.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[<td.*?\n.*?href="(.*?)".*?title="(.*?)"]]></expres>
+<page>[makelist1.param1]</page>
+</regex>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param2]  | [B][makelist3.param4][/B]  Server:[B][makelist3.param2][/B]        </title>
+<link>$doregex[id3]</link>
+<fanart>[makelist1.param3]</fanart>
+<thumbnail>[makelist1.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[domain=(http://gamovideo.*?|https://vidoza.*?|https://kingvid.*?|https://openload.*?|https://streamango.*?|https://streamplay.*?|https://1fichier.*?|http://ul.*?|ttps://streamch.*?)".*?title="(.*?)".*?\n.*?td>(.*?)\n.*?\n.*?td>(.*?)\n]]></expres>
+<page>[makelist2.param1]</page>
+</regex>
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '[makelist3.param1]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = '$doregex[dos]'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>dos</name>
+<expres>file:"(h(.*?))"</expres>
+<page>$doregex[gamo]</page>
+ <agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0</agent>  
+ <cookieJar></cookieJar>
+</regex>
+<regex>
+<name>gamo</name>
+<expres>$pyFunction:get_unpacked(page_data,'javascript.*?(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+<page>[makelist3.param1]</page>
+<referer>http://gamovideo.com/</referer>
+<connection>keep-alive</connection>
+ <agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0</agent>  
+ <cookieJar></cookieJar>
+</regex>
+	
+<thumbnail></thumbnail><fanart></fanart></item>
