@@ -3858,46 +3858,47 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ------------------------------------------| SERIES RETRO |------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------
 <item>
-<title>[COLOR lightyellow][B]SERIES PAPAYA[/B] [/COLOR]</title>
+<title>[B]SERIES GNULA[/B] [-] </title>
+
+<link>$doregex[makelist0]</link>
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+
+<title>[makelist0.param2]   </title>
 <link>$doregex[makelist1]</link>
+]]></listrepeat>
+<expres><![CDATA[href=\"\/(lista-de-series.*?)">(.*?)<]]></expres>
+<page>http://gnula.se/lista-de-series/</page>
+</regex>
+
+
+
 
 <regex>
 <name>makelist1</name>
 <listrepeat><![CDATA[
 
-<title>[makelist1.param3]   </title>
+<title>[makelist1.param2]   </title>
 <link>$doregex[makelist2]</link>
-<thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
-<fanart>http://www.seriespapaya.com/[makelist1.param1]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[src="(.*?)"[\w\W\s]{0,60}href="(.*?)".*?\">(.*?)<]]></expres>
-<page>$doregex[select]</page>
+<expres><![CDATA[a\shref="(.*?)"\stitle="([makelist0.param2].*?)">(.*?)<]]></expres>
+<page>http://gnula.se/[makelist0.param1]</page>
 </regex>
-<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige tu Audio preferido ', ['Series Populares', 'Series Recomendadas', 'Series de Estreno'])
-   lists = ['http://www.seriespapaya.com/lista-series-populares/', 'http://www.seriespapaya.com/lista-series-recomendadas/','http://www.seriespapaya.com/lista-series-estrenos/']
-   return lists[ret]
-]]></expres>
-<page></page>
-</regex>
+
+
 
 
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
 
-<title>[makelist1.param3] [makelist2.param2]     </title>
+<title>[makelist2.param3]  [makelist2.param2]   </title>
 <link>$doregex[makelist3]</link>
-<thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
-<fanart>http://www.seriespapaya.com/[makelist1.param1]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[href="(.*?)".*?nbsp\;(.*?)<]]></expres>
-<page>http://www.seriespapaya.com/[makelist1.param2]</page>
+<expres><![CDATA[blank\"\shref="(.*?)".*?strong>(.*?)<.*?rong>(.*?)<]]></expres>
+<page>http://gnula.se[makelist1.param1]</page>
 </regex>
 
 
@@ -3906,14 +3907,15 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist3</name>
 <listrepeat><![CDATA[
 
-<title>[makelist1.param3] [makelist2.param2] | Idioma:[B][makelist3.param1][/B]  Calidad:[B][makelist3.param5][/B]  Server:[B][makelist3.param3][/B]        </title>
+<title>[makelist2.param3][makelist2.param2] | Idioma:[B][makelist3.param3][/B]  Server:[B][makelist3.param2][/B]</title>
 <link>$doregex[id3]</link>
-<thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
-<fanart>http://www.seriespapaya.com/[makelist1.param1]</fanart>
+<thumbnail>[makelist2.param2]</thumbnail>
+<fanart>[makelist2.param2]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[idioma[\w\W\s]{0,17}images\/(.*?)\.p[\w\W\s]{0,30}fecha\"\>\n(.*?)<[\w\W\s]{0,117}(Clipwa.*?|Streamc.*?|Streama.*?|Vidoz.*?|Openlo.*?|Kingv.*?|Uptobox.*?)<[\w\W\s]{0,37}href="(.*?)"[\w\W\s]{0,87}calidad">\n(.*?)<]]></expres>
-<page>http://www.seriespapaya.com/[makelist2.param1]</page>
+<expres><![CDATA[href="(.*?)"[\w\W\s]{0,230}domain=(waaw.*?|vidoza.*?|kingvid.*?|openload.*?|streamango.*?|clipwatching.*?|vidtodo.*?)"[\w\W\s]{0,230}img\/lng\/(.*?)\.png]]></expres>
+<page>[makelist2.param1]</page>
 </regex>
+
 
 
 
@@ -3931,12 +3933,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
     return u
 ]]></expres>
 <page></page>
-</regex>
-
-<regex>
-<name>link</name>
-<expres>location\.href=\'(.*?)\'</expres>
-<page>[makelist3.param4]</page>[makelist3.param2]
 </regex>
 
 
