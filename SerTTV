@@ -59,6 +59,236 @@
                         <thumbnail>https://pbs.twimg.com/media/DIHLktVUQAADSoP.jpg:large</thumbnail>
                         <fanart>http://www.hdwallpaperup.com/wp-content/uploads/2014/11/red-yellow-blue-color-hd-wallpaper-1024x768.jpg</fanart><link>https://download2332.mediafire.com/1p8azncjnbag/6e2ig2dthb5yskw/latino3tro.mp4</link></item>		
 		
+		---------------------------
+		<item>
+<title>[COLOR aqua]The Big Bang Theory[/COLOR]</title>
+ 
+<link>$doregex[makelist5]</link>
+ 
+ 
+<regex>
+<name>makelist5</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[COLOR gold][makelist5.param3][/COLOR]</title>
+<link>$doregex[Peticiones]</link>
+<thumbnail>http://www.seriespapaya.com/uploads/-The-Big-Bang-Theory7.jpg</thumbnail>
+<fanart>http://www.seriespapaya.com/uploads/-The-Big-Bang-Theory7.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="visco([^h']+).*?href="([^"']+).*?sp;([^<']+).*?]]></expres>
+<page>http://www.seriespapaya.com/serie/the-big-bang-theory.html</page>
+</regex>
+ 
+<regex>
+<name>Peticiones</name>
+<listrepeat><![CDATA[
+<SetwatchMode>55</SetwatchMode>
+<title>[COLOR yellow][makelist5.param3]  [COLOR gold][Peticiones.param1][Peticiones.param4][Peticiones.param7][Peticiones.param10][Peticiones.param13] [COLOR aqua][Peticiones.param2][Peticiones.param5][Peticiones.param8][Peticiones.param11][Peticiones.param14]   [COLOR deepskyblue][/COLOR]</title>
+ <link>$doregex[playvideo]</link>
+<thumbnail>http://www.seriespapaya.com/uploads/-The-Big-Bang-Theory7.jpg</thumbnail>
+<fanart>http://www.seriespapaya.com/uploads/-The-Big-Bang-Theory7.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[mtos">.*?\n.*?">\n.*?images/(.*?).png" />\n.*?div>\n.*?">\n.*?\n.*?\n.*?online/(clipwatching.*?).png.*?</div>\n.*?denlace">\n.*?href="(.*?)".*?|mtos">.*?\n.*?">\n.*?images/(.*?).png" />\n.*?div>\n.*?">\n.*?\n.*?\n.*?online/(stream.*?).png.*?</div>\n.*?denlace">\n.*?href="(.*?)".*?|mtos">.*?\n.*?">\n.*?images/(.*?).png" />\n.*?div>\n.*?">\n.*?\n.*?\n.*?online/(vidoza.*?).png.*?</div>\n.*?denlace">\n.*?href="(.*?)".*?|mtos">.*?\n.*?">\n.*?images/(.*?).png" />\n.*?div>\n.*?">\n.*?\n.*?\n.*?online/(openload.*?).png.*?</div>\n.*?denlace">\n.*?href="(.*?)".*?|mtos">.*?\n.*?">\n.*?images/(.*?).png" />\n.*?div>\n.*?">\n.*?\n.*?\n.*?online/(gamovideo.*?).png.*?</div>\n.*?denlace">\n.*?href="(.*?)".*?]]></expres>
+<page>http://www.seriespapaya.com/[makelist5.param2]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+ 
+ 
+<regex>
+<name>Peticiones4</name>
+<expres>"location.href='((https://stream.*?)|(http://gamovideo.*?)|(https://vidoza.*?)|(https://clipwatching.*?))'"</expres>
+<page>[Peticiones.param3][Peticiones.param6][Peticiones.param9][Peticiones.param12][Peticiones.param15]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+ 
+ 
+<regex>
+<name>Peticiones0</name>
+<expres>location.href='(https://openload.*?)'</expres>
+<page>[Peticiones.param3][Peticiones.param6][Peticiones.param9][Peticiones.param12][Peticiones.param15]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+ 
+<regex>
+<name>Peticiones1</name>
+<expres>file:"(h(.*?))"</expres>
+<page>$doregex[Peticiones2]</page>
+ <referer>http://www.seriespapaya.com/enlace/1748494469/</referer>
+ <agent>Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36</agent>  
+ <cookieJar></cookieJar>
+</regex>
+ 
+<regex>
+<name>Peticiones2</name>
+<expres>$pyFunction:get_unpacked(page_data,'javascript.*?(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+<page>$doregex[Peticiones4]</page>
+ <referer>http://www.seriespapaya.com/enlace/1748494469/</referer>
+ <agent>Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36</agent>  
+ <cookieJar></cookieJar>
+</regex>
+ 
+<regex>
+<name>oload</name>
+<expres><![CDATA[#$pyFunction:
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+ 
+   import cookielib
+   import re
+   import urllib
+   import urllib2
+ 
+   def read(url):
+       opener = urllib2.build_opener()
+       opener.addheaders = [('User-Agent', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3163.100 Safari/537.36')]
+       response = opener.open(url)
+       data = response.read()
+       return data
+ 
+   def read_openload(url):
+       default_headers = dict()
+       default_headers["User-Agent"] = "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3163.100 Safari/537.36"
+       default_headers["Accept"] = "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"
+       default_headers["Accept-Language"] = "es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3"
+       default_headers["Accept-Charset"] = "UTF-8"
+       default_headers["Accept-Encoding"] = "gzip"
+       cj = cookielib.MozillaCookieJar()
+       request_headers = default_headers.copy()
+       url = urllib.quote(url, safe="%/:=&?~#+!$,;'@()*[]")
+       handlers = [urllib2.HTTPHandler(debuglevel=False)]
+       handlers.append(NoRedirectHandler())
+       handlers.append(urllib2.HTTPCookieProcessor(cj))
+       opener = urllib2.build_opener(*handlers)
+       req = urllib2.Request(url, None, request_headers)
+       handle = opener.open(req, timeout=None)
+ 
+       return handle.headers.dict.get('location')
+ 
+   def decode(code, parseInt, _0x59ce16, _1x4bfb36):
+       import math
+ 
+       _0x1bf6e5 = ''
+       ke = []
+ 
+       for i in range(0, len(code[0:9*8]),8):
+           ke.append(int(code[i:i+8],16))
+ 
+       _0x439a49 = 0
+       _0x145894 = 0
+ 
+       while _0x439a49 < len(code[9*8:]):
+           _0x5eb93a = 64
+           _0x896767 = 0
+           _0x1a873b = 0
+           _0x3c9d8e = 0
+           while True:
+               if _0x439a49 + 1 >= len(code[9*8:]):
+                   _0x5eb93a = 143;
+ 
+               _0x3c9d8e = int(code[9*8+_0x439a49:9*8+_0x439a49+2], 16)
+               _0x439a49 +=2
+ 
+               if _0x1a873b < 6*5:
+                   _0x332549 = _0x3c9d8e & 63
+                   _0x896767 += _0x332549 << _0x1a873b
+               else:
+                   _0x332549 = _0x3c9d8e & 63
+                   _0x896767 += int(_0x332549 * math.pow(2, _0x1a873b))
+ 
+               _0x1a873b += 6
+               if not _0x3c9d8e >= _0x5eb93a: break
+ 
+           # _0x30725e = _0x896767 ^ ke[_0x145894 % 9] ^ _0x59ce16 ^ parseInt ^ _1x4bfb36
+           _0x30725e = _0x896767 ^ ke[_0x145894 % 9] ^ parseInt ^ _1x4bfb36
+           _0x2de433 = _0x5eb93a * 2 + 127
+ 
+           for i in range(4):
+               _0x3fa834 = chr(((_0x30725e & _0x2de433) >> (9*8/ 9)* i) - 1)
+               if _0x3fa834 != '$':
+                   _0x1bf6e5 += _0x3fa834
+               _0x2de433 = (_0x2de433 << (9*8/ 9))
+ 
+           _0x145894 += 1
+ 
+ 
+       url = "https://openload.co/stream/%s?mime=true" % _0x1bf6e5
+       return url
+ 
+   class NoRedirectHandler(urllib2.HTTPRedirectHandler):
+       def http_error_302(self, req, fp, code, msg, headers):
+           infourl = urllib.addinfourl(fp, headers, req.get_full_url())
+           infourl.status = code
+           infourl.code = code
+           return infourl
+ 
+       http_error_300 = http_error_302
+       http_error_301 = http_error_302
+       http_error_303 = http_error_302
+       http_error_307 = http_error_302
+ 
+   url = '$doregex[Peticiones0]'
+   data = read(url)
+   try:
+       try:
+           code = re.findall('p style="" id="[^"]+">(.*?)<\/p', data, flags=re.DOTALL)[0]
+       except:
+           code = re.findall('<p id=\".*?\" style=\"\">(.*?)<\/p', data, flags=re.DOTALL)[0]
+       _0x59ce16 = eval(re.findall('_0x59ce16=([^;]+)',data)[0].replace('parseInt', 'int'))
+       _1x4bfb36 = eval(re.findall('_1x4bfb36=([^;]+)',data)[0].replace('parseInt', 'int'))
+       parseInt  = eval(re.findall('_0x30725e,(\(parseInt.*?)\),',data)[0].replace('parseInt', 'int'))
+       url = decode(code, parseInt, _0x59ce16, _1x4bfb36)
+       url = read_openload(url)
+   except:
+       pass
+       return ''
+       
+   header_test = {'user-agent': 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3163.100 Safari/537.36'}
+   header_test = '|' + urllib.urlencode(header_test)
+   return url + header_test
+]]></expres>        
+<page></page>
+</regex>
+ 
+<regex>
+ 
+ <name>playvideo</name>
+ 
+<expres><![CDATA[#$pyFunction
+ 
+import urlresolver
+ 
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url = '$doregex[Peticiones4]'
+ 
+    try:
+ 
+        u = urlresolver.resolve(url)
+ 
+    except:
+ 
+        u = '$doregex[Peticiones1]$doregex[oload]'
+ 
+    return u
+ 
+]]></expres>
+ 
+ <page></page>
+ 
+<cookieJar></cookieJar>
+ 
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0</agent>
+ 
+<Referer></Referer>
+ 
+<Accept>*/*</Accept>
+ 
+</regex>
+</item>
+		
 -------------------------------------------------------------------------------------------------------------------------------------
 <channel>
     <name>[COLOR white][COLOR cyan][COLOR  lime]•   [/COLOR] Juego De Tronos[/COLOR] [COLOR Gold]Temporadas  1-8[/COLOR]</name>
